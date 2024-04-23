@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Idade</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <form class="fix" action="./php/idade.php" method="post">
+        <label for="id_name">Digite seu nome:</label>
+        <input type="text" name="name" id="id_name"> <br>
+        <label for="id_cargo">Digite seu cargo:</label>
+        <input type="text" name="cargo" id="id_cargo"> <br>
+        <label for="id_nasc">Digite sua data de nascimento:</label>
+        <input type="date" name="born-date" id="id_nasc"> <br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
