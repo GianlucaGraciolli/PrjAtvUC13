@@ -39,7 +39,6 @@ function CalculateTable($number)
         echo "<tr> <td> " . $number . " X " . $i . " </td> <td> " . $resultado = $number * $i . " </td> </tr>";
     }
     echo "</table>";
-
 }
 
 
