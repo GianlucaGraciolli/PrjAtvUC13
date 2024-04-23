@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $number = filter_input(INPUT_GET,"numero", FILTER_VALIDADE_NUMBER_INT);
 
