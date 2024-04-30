@@ -3,11 +3,12 @@
 $name = filter_input(INPUT_POST,"name", FILTER_SANITIZE_STRING);
 $cargo = $_POST["cargo"];
 $borndate = $_POST["born-date"];
+$today = date_create("now");  
+//var_dump($today);
 
-CalculateBday($borndate);
+CalculateBday($borndate, $today);
 
-function CalculateBday ($borndate) {
-    $today = date("d/m/Y");
-    $age = date_diff(date_create($borndate), date_create($today) );
-    echo $age->format("%R%a years");
-} return "erro";
+function CalculateBday ($borndate, $today) {
+    $age = date_create($borndate)->diff($today);
+    echo "Você tem " . $age->format("%y") . " Anos";
+}   
